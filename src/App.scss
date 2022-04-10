@@ -1,0 +1,24 @@
+// colors
+@import './styles/colors.scss';
+
+// breakpoints
+@import './styles/breakpoints.scss';
+
+header {
+    background: $dark-2;
+    padding: 15px 20px;
+    h5 {
+        margin: 0;
+        line-height: normal;
+        font-weight: 500;
+        color: $gray-1;
+    }
+    @include md {
+        position: sticky;
+        top: 0;
+    }
+}
+
+.body {
+    padding: 20px 10px;
+}

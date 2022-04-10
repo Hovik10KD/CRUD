@@ -1,0 +1,21 @@
+// colors
+@import '/src/styles/colors.scss';
+
+
+.progressBar{
+    height: 38px;
+    color: $dark-2 !important;
+    font-weight: bold !important;
+    position: relative;
+
+    span {
+        position: absolute;
+        width: max-content;
+        height: max-content;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}

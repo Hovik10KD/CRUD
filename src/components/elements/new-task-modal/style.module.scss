@@ -1,0 +1,31 @@
+// colors
+@import '../../../styles/colors.scss';
+
+.form{
+    height: 100%;
+}
+
+.contentBlock{
+    padding-bottom: 10px;
+    height: calc(100% - 69px);
+    overflow-y: auto;
+
+    .errorMessage {
+        margin-top: 10px;
+        padding: 5px !important;
+    }
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px 20px 10px;
+    border-top: 0.5px solid $dark-1;
+    
+    button {
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+}

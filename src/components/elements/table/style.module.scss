@@ -1,0 +1,80 @@
+// colors
+@import '/src/styles/colors.scss';
+
+// breakpoints
+@import '../../../styles/breakpoints.scss';
+
+.table {
+    border-spacing: 0 10px !important;
+    border-collapse: separate;
+
+    thead {
+        tr {
+            &:hover {
+                cursor: auto;
+                background: $dark-1 !important;
+            }
+        }
+    }
+    
+    tr {
+        background: $dark-1 !important;
+        border-radius: 20px !important;
+        overflow: hidden !important;
+        color: $gray-1;
+
+        &:hover {
+            cursor: pointer;
+            background: $dark-2 !important;
+        }
+
+        td {
+            border: none !important;
+
+            &:first-child {
+                border-top-left-radius: 4px !important;
+                border-bottom-left-radius: 4px !important;
+            }
+            &:last-child {
+                border-top-right-radius: 4px !important;
+                border-bottom-right-radius: 4px !important;
+                width: 150px;
+            }
+            
+            button {
+                &:first-child {
+                    margin-right: 10px;
+                }
+            }
+
+            @include sm {
+                &:nth-child(2){
+                    display: none;
+                }
+            }
+
+            @include xs {
+                &:nth-child(3){
+                    display: none;
+                }
+            }
+        }
+        th {
+            border: none !important;
+            padding: 15px 8px;
+            color: $white;
+            font-weight: 500;
+
+            @include sm {
+                &:nth-child(2){
+                    display: none;
+                }
+            }
+            @include xs {
+                &:nth-child(3){
+                    display: none;
+                }
+            }
+        }
+    }
+}

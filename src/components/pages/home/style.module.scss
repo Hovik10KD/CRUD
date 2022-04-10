@@ -1,0 +1,41 @@
+// breakpoints
+@import '../../../styles/breakpoints.scss';
+
+.controlPanel {
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    button {
+        @include sm {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .searchInput {
+        width: 200px !important;
+        margin-left: 15px;
+
+        @include sm {
+            width: 100% !important;
+            margin-bottom: 10px;
+            margin-left: 0;
+        }
+    }
+
+    .sortSelect {
+        width: 200px !important;
+        margin-left: 15px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @include sm {
+            width: 100% !important;
+            margin-bottom: 10px;
+            margin-left: 0;
+        }
+    }
+}
